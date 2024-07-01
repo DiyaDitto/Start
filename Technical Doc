@@ -1,0 +1,153 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Technical Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Technical Documentation</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Setup">Setup</a>
+        <a class="nav-link" href="#Basics">Basics</a>
+        <a class="nav-link" href="#Advanced_Topics">Advanced Topics</a>
+        <a class="nav-link" href="#Conclusion">Conclusion</a>
+    </nav>
+
+    <main id="main-doc">
+        <section id="Introduction" class="main-section">
+            <header>Introduction</header>
+            <p>Welcome to the technical documentation page.</p>
+            <p>This documentation will cover the basics and advanced topics.</p>
+            <p>Let's get started with the setup process.</p>
+        </section>
+
+        <section id="Setup" class="main-section">
+            <header>Setup</header>
+            <p>To set up the project, follow these steps:</p>
+            <ol>
+                <li>Install the necessary software.</li>
+                <li>Clone the repository.</li>
+                <li>Run the installation commands.</li>
+            </ol>
+            <code>git clone https://example.com/repo.git</code>
+            <code>npm install</code>
+        </section>
+
+        <section id="Basics" class="main-section">
+            <header>Basics</header>
+            <p>In this section, we will cover the basics.</p>
+            <p>Understanding the fundamental concepts is crucial.</p>
+            <p>Basic syntax:</p>
+            <code>const x = 10;</code>
+            <code>function greet() { console.log('Hello'); }</code>
+            <ul>
+                <li>Variables</li>
+                <li>Functions</li>
+                <li>Loops</li>
+            </ul>
+        </section>
+
+        <section id="Advanced_Topics" class="main-section">
+            <header>Advanced Topics</header>
+            <p>Now let's dive into some advanced topics.</p>
+            <p>These include:</p>
+            <ul>
+                <li>Asynchronous Programming</li>
+                <li>Advanced Data Structures</li>
+                <li>Design Patterns</li>
+            </ul>
+            <code>async function fetchData() { await fetch(url); }</code>
+            <code>class Node { constructor(data) { this.data = data; } }</code>
+        </section>
+
+        <section id="Conclusion" class="main-section">
+            <header>Conclusion</header>
+            <p>Thank you for reading this technical documentation.</p>
+            <p>We hope it was helpful.</p>
+            <p>If you have any questions, feel free to reach out.</p>
+        </section>
+    </main>
+</body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 200px;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar header {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+#main-doc {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.main-section {
+    margin-bottom: 40px;
+}
+
+header {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+code {
+    display: block;
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #main-doc {
+        margin-left: 0;
+    }
+}
+
+
+** end of undefined **
+
