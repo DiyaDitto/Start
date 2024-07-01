@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="https://www.example.com/logo.png" alt="Logo">
+        <nav id="nav-bar">
+            <a class="nav-link" href="#features">Features</a>
+            <a class="nav-link" href="#how-it-works">How It Works</a>
+            <a class="nav-link" href="#pricing">Pricing</a>
+        </nav>
+    </header>
+
+    <section id="features">
+        <h2>Features</h2>
+        <p>Our product has many amazing features.</p>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <p>Here is how our product works.</p>
+    </section>
+
+    <section id="pricing">
+        <h2>Pricing</h2>
+        <p>Choose a pricing plan that fits your needs.</p>
+    </section>
+
+    <section id="video-section">
+        <h2>Product Video</h2>
+        <iframe id="video" src="https://www.youtube.com/embed/examplevideo" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="signup">
+        <h2>Sign Up</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <input type="submit" id="submit" value="Sign Up">
+        </form>
+    </section>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#header-img {
+    height: 50px;
+}
+
+#nav-bar {
+    display: flex;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 80px 20px 20px; /* Add top padding to account for the fixed header */
+}
+
+#video-section {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="email"], input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 300px;
+}
+
+@media (max-width: 600px) {
+    #header {
+        flex-direction: column;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
